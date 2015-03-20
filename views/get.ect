@@ -1,7 +1,36 @@
-<br/>
-<h1>Users name list</h1>
-<ul>
-    <% for user in @addUser : %>
-        <li><%- user.name %></li>
-    <% end%>
-</ul>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/latest/css/bootstrap.min.css">
+  <style>
+	.short{
+		width:700px;
+	}
+
+  </style>
+</head>
+<body class="container">
+
+    <div class="container short">
+      <div class="header">
+
+        <h3 class="text-muted">Домашнее задание 3</h3>
+      </div>
+
+      <div class="jumbotron">
+
+
+        <h1>С нами уже</h1>
+        <ul>
+            <% for user in @addUser : %>
+                <li><%- user.name %></li>
+            <% end%>
+        </ul>
+
+
+
+       </div>
+	</div>
+</body>
+</html>
